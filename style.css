@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --main-bg-color:rgb(9, 135, 253);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    
+    background: var(--main-bg-color);  
+    font-family: 'Lato', sans-serif;  
+}
+nav {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+
+}
+.logo img{
+    width:88px;
+    padding:0 30px;
+    
+}
+nav ul li{
+     list-style: none;
+     padding: 0 23px;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+    font-family: 'Lato', sans-serif;
+}
+nav ul li a:hover{
+    color:white;
+   font-weight: bolder;
+}
+nav ul li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+.search{
+    display: flex;
+  align-items: center;
+}
+.search input{
+    width: 493px;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 5px;
+    padding: 0 12px;
+}
+button{
+    width:100px;
+    border-radius: 1px;
+    background-color: white;
+    }
+.slider{
+       width: 100vh;
+        
+        margin: 5px 50px ;
+    }
+.card{
+        max-width: 91vw;
+        margin: 0 50px;
+        color: black;
+        background-color: white ;
+        border-radius: 5px;         
+    }
+.card-items  {
+      display: inline-flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 20px;
+}
+
+body{
+        background-color: rgb(197, 197, 197);
+    }
+
+/*.card1{
+    background-color: white;
+     margin: 0 50px;
+     border-radius: 5px;
+}*/
+
+
+footer{
+    height:12vh;
+    background-color: var(--main-bg-color);
+    color: rgb(43, 35, 35);
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.btn{
+    padding:5px 10px;
+    color: var(--main-bg-color);
+    background-color: white;
+    border: 2px soslid white;
+    border-radius: 7px;
+    cursor: pointer;
+   font-family: 'Lato', sans-serif;
+}
+.my-2{
+    margin: 25px 0;
+}
+.text-center{
+    text-align: center;
+   width: 12vw;
+}
+.btn:hover{
+    
+    font-weight: bolder;
+}
