@@ -5,32 +5,31 @@
 }
 *{
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
-header{
-    
+header{   
     background: var(--main-bg-color);  
     font-family: 'Lato', sans-serif;  
 }
 nav {
     height: 58px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
+  /*  justify-content: flex-start;*/
+    align-items: center;    
 }
 
 nav ul{
   display: flex;
-  justify-content: flex-start;
+  
   align-items: center;
+}
+div{
+    display: block;
 }
 .logo{
     display: flex;
     align-items: center;
-    
-
 }
 .logo img{
     width:88px;
@@ -59,11 +58,15 @@ nav ul li a{
   align-items: center;
 }
 .search input{
-    width: 493px;
+    width: 30vw;
     height: 27px;
-    /*border-radius: 5px;*/
-    margin: 0 16px 0 5px;
+    border-radius: 5px;
+   margin : 0 16px 0 56px;
     padding: 0 12px;
+}
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 button{
     width:100px;
@@ -71,26 +74,32 @@ button{
     background-color: white;
     }
 .slider{
-       width: 100vh;
-        
-        margin: 5px 50px ;
+       width: 90vw;     
+      
+        margin: 12px auto ;
+        overflow: hidden;
     }
 .card{
         max-width: 91vw;
-        margin: 0 50px;
+        margin: 37px auto;
         color: black;
         background-color: white ;
-        border-radius: 5px;         
+        border-radius: 5px;  
+        overflow: hidden;       
+    }
+.cards{
+        display: flex;
     }
 .card-items  {
       display: inline-flex;
       justify-content: center;
       flex-direction: column;
-      margin: 0 20px;
+      margin: 0 15px;
+      
 }
 
 body{
-        background-color: rgb(197, 197, 197);
+        background-color: rgb(252, 249, 249);
     }
 
 /*.card1{
@@ -107,9 +116,6 @@ footer{
     font-family: 'Lato', sans-serif;
 
 }
-
-
-
 
 
 .flex-all-center{
@@ -132,8 +138,42 @@ footer{
 .text-center{
     text-align: center;
    width: 12vw;
+   margin: 5px 0;
 }
 .btn:hover{
     
     font-weight: bolder;
 }
+
+@media screen and (max-width:1000px){
+    nav{
+        flex-direction: column;
+        height: 130px;
+    }
+    /*.logo{
+       justify-content: center;
+         margin: 12px 0;
+    }*/
+    
+    .slider{
+        height: 23vh;
+    }
+    .search{
+        justify-content: center;
+    }
+    .search input{
+        margin: 12px 16px;
+    }
+    nav ul {
+        justify-content: center;
+        height: 34px;
+    }
+    .card-items img{
+        width: 140px;
+    }
+    .card{
+        overflow: scroll;
+    }
+}
+
+
