@@ -138,11 +138,14 @@ footer{
 .text-center{
     text-align: center;
    width: 12vw;
-   margin: 5px 0;
+   margin: -6px 8px;
 }
 .btn:hover{
     
     font-weight: bolder;
+}
+pre{
+    overflow: hidden;
 }
 
 @media screen and (max-width:1000px){
@@ -173,6 +176,12 @@ footer{
     }
     .card{
         overflow: scroll;
+    }
+    pre{
+        overflow: scroll;
+    }
+    .text-center{
+        margin: -6px 27px;
     }
 }
 
